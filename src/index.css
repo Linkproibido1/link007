@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0A0A0F] text-gray-100;
+  }
+}
+
+.swiper-pagination-bullet {
+  @apply bg-gray-500 opacity-50;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-blue-500 opacity-100;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-blue-500;
+}
+
+.glass-effect {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.neon-glow {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5),
+               0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(59,130,246,0.3)];
+}
