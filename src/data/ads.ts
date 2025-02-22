@@ -1,44 +1,31 @@
 import { AdConfig } from '../types';
 
+// Código do banner reutilizável
+const bannerCode = `
+<script type="text/javascript">
+  atOptions = {
+    "key" : "ad7559a08148a2b2727602709f109258",
+    "format" : "iframe",
+    "height" : 50,
+    "width" : 320,
+    "params" : {}
+  };
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/ad7559a08148a2b2727602709f109258/invoke.js"></script>
+`;
+
 export const ads: AdConfig = {
   banners: {
     header: {
-      code: '<script type="text/javascript">
-	atOptions = {
-		'key' : 'ad7559a08148a2b2727602709f109258',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/ad7559a08148a2b2727602709f109258/invoke.js"></script>',
+      code: bannerCode, // Código do banner no header
       enabled: true
     },
     sidebar: {
-      code: '<script type="text/javascript">
-	atOptions = {
-		'key' : 'ad7559a08148a2b2727602709f109258',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/ad7559a08148a2b2727602709f109258/invoke.js"></script>',
+      code: bannerCode, // Código do banner no sidebar
       enabled: true
     },
     footer: {
-      code: '<script type="text/javascript">
-	atOptions = {
-		'key' : 'ad7559a08148a2b2727602709f109258',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/ad7559a08148a2b2727602709f109258/invoke.js"></script>',
+      code: bannerCode, // Código do banner no footer
       enabled: true
     }
   },
