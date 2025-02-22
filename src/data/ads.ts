@@ -3,15 +3,42 @@ import { AdConfig } from '../types';
 export const ads: AdConfig = {
   banners: {
     header: {
-      code: '<div id="header-banner">Header Banner Ad Space</div>',
+      code: '<script type="text/javascript">
+	atOptions = {
+		'key' : 'ad7559a08148a2b2727602709f109258',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/ad7559a08148a2b2727602709f109258/invoke.js"></script>',
       enabled: true
     },
     sidebar: {
-      code: '<div id="sidebar-banner">Sidebar Banner Ad Space</div>',
+      code: '<script type="text/javascript">
+	atOptions = {
+		'key' : 'ad7559a08148a2b2727602709f109258',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/ad7559a08148a2b2727602709f109258/invoke.js"></script>',
       enabled: true
     },
     footer: {
-      code: '<div id="footer-banner">Footer Banner Ad Space</div>',
+      code: '<script type="text/javascript">
+	atOptions = {
+		'key' : 'ad7559a08148a2b2727602709f109258',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/ad7559a08148a2b2727602709f109258/invoke.js"></script>',
       enabled: true
     }
   },
